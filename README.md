@@ -6,4 +6,5 @@ Very minor usage, such as netcat automation and
 daemonization of network connections. All of which
 can be done in a single line of code.
 
-I'm really just that bored.
+  Place aircommand-ng in your stationary computer.
+  Place airstrike-ng in your mobile.
