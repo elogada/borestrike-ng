@@ -5,7 +5,6 @@ if [ -z $1 ] do
   exit 1
 done
 
-
 sleep 3
 echo "[!] Initiating airstrike-ng..."
 sleep 5
@@ -17,4 +16,5 @@ echo "[ ok ] Dependencies ready."
 sleep 1
 echo "[+] Airstrike-ng v0.8.1 by elogada (c)2018. All deps not mine."
 echo "[!] Welcome to duty, commander."
-echo "[ ok ] Shell is open."
+echo "[ ok ] Shell should open by now."
+nc "$1" 1004
