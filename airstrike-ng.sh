@@ -14,7 +14,7 @@ echo "[!] Ready dependencies..."
 sleep 1
 echo "[ ok ] Dependencies ready."
 sleep 1
-echo "[+] Airstrike-ng v0.8.1 by elogada (c)2018. All deps not mine."
+echo "[+] Airstrike-ng v0.8.1 by elogada. All deps not mine."
 echo "[!] Welcome to duty, commander."
 echo "[ ok ] Shell should open by now."
 nc "$1" 1004
