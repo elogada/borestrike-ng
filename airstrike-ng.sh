@@ -1,7 +1,7 @@
 #/bin/bash
 if [ -z $1 ] do
   echo "Airstrike-ng v0.8.1 by elogada (c)2018."
-  echo "Usage: airstrike-ng [aircontrol IP address]
+  echo "Usage: airstrike-ng [aircontrol IP address]"
   exit 1
 done
 
